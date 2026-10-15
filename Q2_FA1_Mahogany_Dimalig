@@ -1,1 +1,46 @@
-hi
+#The user will have to type in two of their desired numbers and select the operation that will be used
+num1 = int(input("Type in first number: "))
+num2 = int(input("Type in second number: "))
+operation = input("Please select an operation: ")
+
+#This part defines what functions does each operation do
+def add_numbers(a, b):
+  return a + b
+
+def subtract_numbers(a, b):
+  return a - b
+
+def multiply_numbers(a, b):
+  return a * b
+
+def divide_numbers(a, b):
+  return a / b
+
+#This is where it calculates and print the output
+if operation == "Addition":
+  print(add_numbers(num1, num2))
+
+elif operation == "Subtraction":
+  print(subtract_numbers(num1, num2))
+
+elif operation == "Multiplication":
+  print(multiply_numbers(num1, num2))
+
+elif operation == "Division":
+  print(divide_numbers(num1, num2))
+
+#Reflection
+#1. What functions did you create in your calculator program?
+ # I created four functions: add(), subtract(), multiply(), and divide(). Each function performs a different mathematical operation.
+
+#2. What parameters did your functions use?
+ # My functions used two parameters, a and b, which represent the two numbers used in the calculations.
+
+#3. What arguments were passed when the functions were called?
+ # The arguments were the two numbers entered by the user. These numbers were passed into the functions to perform the selected operation.
+
+#4.How did your program use the returned value?
+ # My program used the returned value to display the result of the calculation to the user.
+
+#5. Why is it better to divide the calculator program into functions instead of writing everything in one long block of code?
+ # Dividing the calculator program into functions makes the code easier to read, understand, and organize. It also makes finding errors a lot easier and allows the functions to be reused without writing the same code again.
