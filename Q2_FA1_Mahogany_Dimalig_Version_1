@@ -1,0 +1,98 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPPvRy3gkB3j6E/Ys1tvgJz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/geonnelleWinFih/Q2_Assessments_Dimalig/blob/main/Q2_FA1_Mahogany_Dimalig_Version_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t9dYiFW8BLDR",
+        "outputId": "cd84d95a-58aa-48b5-aa43-cf757d3f4281"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type in first number: 5\n",
+            "Type in second number: 5\n",
+            "Please select an operation: Geonnelle\n",
+            "Invalid operation chosen.\n"
+          ]
+        }
+      ],
+      "source": [
+        "num1 = int(input(\"Type in first number: \"))\n",
+        "num2 = int(input(\"Type in second number: \"))\n",
+        "operation = input(\"Please select an operation: \")\n",
+        "\n",
+        "def add_numbers(a, b):\n",
+        "  return a + b\n",
+        "\n",
+        "def subtract_numbers(a, b):\n",
+        "  return a - b\n",
+        "\n",
+        "def multiply_numbers(a, b):\n",
+        "  return a * b\n",
+        "\n",
+        "def divide_numbers(a, b):\n",
+        "  return a / b\n",
+        "\n",
+        "if operation == \"Addition\":\n",
+        "  print(add_numbers(num1, num2))\n",
+        "\n",
+        "elif operation == \"Subtraction\":\n",
+        "  print(subtract_numbers(num1, num2))\n",
+        "\n",
+        "elif operation == \"Multiplication\":\n",
+        "  print(multiply_numbers(num1, num2))\n",
+        "\n",
+        "elif operation == \"Division\":\n",
+        "  print(divide_numbers(num1, num2))\n",
+        "\n",
+        "#Reflection\n",
+        "#1. What functions did you create in your calculator program?\n",
+        " # I created four functions: add(), subtract(), multiply(), and divide(). Each function performs a different mathematical operation.\n",
+        "\n",
+        "#2. What parameters did your functions use?\n",
+        " # My functions used two parameters, a and b, which represent the two numbers used in the calculations.\n",
+        "\n",
+        "#3. What arguments were passed when the functions were called?\n",
+        " # The arguments were the two numbers entered by the user. These numbers were passed into the functions to perform the selected operation.\n",
+        "\n",
+        "#4.How did your program use the returned value?\n",
+        " # My program used the returned value to display the result of the calculation to the user.\n",
+        "\n",
+        "#5. Why is it better to divide the calculator program into functions instead of writing everything in one long block of code?\n",
+        " # Dividing the calculator program into functions makes the code easier to read, understand, and organize. It also makes finding errors a lot easier and allows the functions to be reused without writing the same code again."
+      ]
+    }
+  ]
+}
