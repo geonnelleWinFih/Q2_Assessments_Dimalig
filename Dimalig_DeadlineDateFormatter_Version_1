@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQO5C8ByXUJcLATzlVVvZU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/geonnelleWinFih/Q2_Assessments_Dimalig/blob/main/Dimalig_DeadlineDateFormatter_Version_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nH3PSyuSuWKO",
+        "outputId": "6674b711-5a5d-432e-9116-6a0f603031d4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter event title: Geo Bday\n",
+            "Enter year: 2026\n",
+            "Enter month: 11\n",
+            "Enter day: 26\n",
+            "Formatted Output:\n",
+            "Event: GEO BDAY\n",
+            "Date: 11/26/2026\n",
+            "Year: 2026\n",
+            "Month: 11\n",
+            "Day: 26\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Version 1\n",
+        "title = input(\"Enter event title: \").strip()\n",
+        "year = input(\"Enter year: \")\n",
+        "month = input(\"Enter month: \")\n",
+        "day = input(\"Enter day: \")\n",
+        "\n",
+        "print(\"Formatted Output:\")\n",
+        "print(f\"Event: {title.upper()}\")\n",
+        "print(f\"Date: {month}/{day}/{year}\")\n",
+        "print(f\"Year: {year}\")\n",
+        "print(f\"Month: {month}\")\n",
+        "print(f\"Day: {day}\")\n",
+        "\n",
+        "#For Output, please type in proper and relevant information, thanks :D"
+      ]
+    }
+  ]
+}
