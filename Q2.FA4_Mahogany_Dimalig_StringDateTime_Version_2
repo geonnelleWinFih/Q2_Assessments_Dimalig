@@ -1,0 +1,81 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMtjMltjCNT8+Cdv1VN+dLm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/geonnelleWinFih/Q2_Assessments_Dimalig/blob/main/Q2.FA4_Mahogany_Dimalig_StringDateTime_Version_2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "beac59d4-d9e7-4e59-8061-457c55706880",
+        "id": "1DtzMSYir5Yi"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Formatted Output ---\n",
+            "Name: Ushiwakamaru Benkei\n",
+            "Name Code: USHIWAKAMARU BENKEI\n",
+            "Section: Mahogany\n",
+            "Favorite Subject: Social Science\n",
+            "Character Count: 19\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Activity 1 Implementation Code\n",
+        "# Test with messy inputs like '  juan ', ' dela cruz ', 'narra ',' acacia ', 'mahogany ', '  molave ' 'computer science'\n",
+        "\n",
+        "first_name = ' ushiwakamaru '\n",
+        "last_name = ' benkei '\n",
+        "section = ' mahogany '\n",
+        "fav_subject = ' social science '\n",
+        "\n",
+        "# Cleaning and formatting logic\n",
+        "first_name = first_name.strip()\n",
+        "last_name = last_name.strip()\n",
+        "\n",
+        "full_name = f\"{first_name} {last_name}\".title()\n",
+        "full_name_upper = full_name.upper()\n",
+        "formatted_section = section.strip().title()\n",
+        "formatted_subject = fav_subject.strip().title()\n",
+        "char_count = len(full_name)\n",
+        "\n",
+        "print(\"--- Formatted Output ---\")\n",
+        "print(f\"Name: {full_name}\")\n",
+        "print(f\"Name Code: {full_name_upper}\")\n",
+        "print(f\"Section: {formatted_section}\")\n",
+        "print(f\"Favorite Subject: {formatted_subject}\")\n",
+        "print(f\"Character Count: {char_count}\")"
+      ]
+    }
+  ]
+}
